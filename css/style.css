@@ -1,0 +1,70 @@
+:root {
+  --green: #3c9379;
+  --black: #101913;
+  --grey: #535a56;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ===  header ====================== */
+
+.wrapper {
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.header__link {
+}
+
+.logo {
+  width: 123px;
+  height: 36px;
+}
+
+.header__links {
+  display: flex;
+}
+
+.links {
+}
+
+.links__item + .links__item {
+  margin-left: 35px;
+}
+
+.links__item a {
+  color: var(--grey);
+  font-size: 16px;
+}
+
+.header__actions {
+}
+
+.actions {
+}
+
+.actions__login {
+  color: var(--black);
+}
+
+.button-green {
+    color: #fff;
+    font-size: 16px;
+    background-color: var(--green);
+    border: none;
+    border-radius: 8px;
+    padding: 12px 18px;
+    
+}
