@@ -12,17 +12,31 @@ body {
   max-width: 1200px;
   margin: 0 auto;
 }
-
-/* ===  header ====================== */
-
-.wrapper {
-}
-
-@media only screen and (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .wrapper {
     padding: 0px 15px;
   }
 }
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .wrapper {
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    max-width: none;
+  }
+} */
+
+/* ===  header ====================== */
 
 .header {
   display: flex;
@@ -36,21 +50,29 @@ body {
   display: inline-block;
   cursor: pointer;
 }
-
-@media only screen and (max-width: 600px) {
+@media (max-width: 399px) {
   .container {
-    display: flex;
+    margin-left: 130px;
   }
 }
 
 .bar1,
 .bar2,
 .bar3 {
+  display: none;
   width: 35px;
   height: 5px;
   background-color: #333;
   margin: 6px 0;
   transition: 0.4s;
+}
+
+@media (max-width: 598px) {
+  .bar1,
+  .bar2,
+  .bar3 {
+    display: flex;
+  }
 }
 
 /* Rotate first bar */
@@ -268,7 +290,11 @@ body {
 }
 
 .actions__login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: var(--black);
+  margin-right: 15px;
 }
 
 .button-green {
@@ -278,6 +304,12 @@ body {
   border: none;
   border-radius: 8px;
   padding: 12px 18px;
+}
+
+@media (max-width: 399px) {
+  .button-green {
+    margin-right: 10px;
+  }
 }
 
 /* =======  main  ================================= */
