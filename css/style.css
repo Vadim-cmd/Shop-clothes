@@ -37,12 +37,6 @@ body {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 1200px) {
-  .container {
-    display: none;
-  }
-}
-
 @media only screen and (max-width: 600px) {
   .container {
     display: flex;
@@ -189,7 +183,9 @@ body {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -203,13 +199,25 @@ body {
 }
 
 /* Fade out the second bar */
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 /* Rotate last bar */
 .change .bar3 {
   transform: translate(0, -11px) rotate(45deg);
 }
 
+.img-bag {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .img-bag {
+    display: flex;
+    width: 35px;
+  }
+}
 
 .header__link {
 }
@@ -217,6 +225,12 @@ body {
 .logo {
   width: 123px;
   height: 36px;
+}
+
+@media only screen and (max-width: 398px) {
+  .logo {
+    display: none;
+  }
 }
 
 .header__links {
